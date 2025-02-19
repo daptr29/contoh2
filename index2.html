@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>In House Training Coding</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <!-- Google Font: Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+
+    <style>
+        /* ========== Background Image ========== */
+        body {
+            background: url('./php.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* ========== Running Text (Marquee) ========== */
+        .marquee-container {
+            width: 100%;
+            overflow: hidden;
+            background-color: #1E40AF; /* Warna biru */
+            color: white;
+            padding: 10px 0;
+            position: relative;
+            white-space: nowrap;
+        }
+
+        /* Flexbox untuk membuat teks berjalan tanpa terputus */
+        .marquee-content {
+            display: flex;
+            gap: 50px; /* Jarak antar teks */
+            animation: marquee 10s linear infinite;
+        }
+
+        .marquee-content span {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Animasi berjalan dari kanan ke kiri */
+        @keyframes marquee {
+            from {
+                transform: translateX(0%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* ========== Styling Gambar Profil ========== */
+        .profile-image {
+            width: 300px;
+            height: 400px;
+            object-fit: cover; /* Menjaga proporsi gambar */
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ========== Running Text (Marquee) ========== -->
+    <div class="marquee-container">
+        <div class="marquee-content">
+            <span>In House Training Coding - Minggu, 23 Februari 2025</span>
+            <span>In House Training Coding - Minggu, 23 Februari 2025</span>
+        </div>
+    </div>
+
+    <!-- ========== Main Content ========== -->
+    <div class="flex justify-center items-center h-screen">
+        <div class="bg-blue-800 bg-opacity-75 text-white p-8 rounded-lg relative" style="width: 90%; max-width: 800px;">
+            <div class="relative z-10 flex flex-col md:flex-row">
+                
+                <!-- ========== Informasi Profil ========== -->
+                <div class="md:w-1/2">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-bars text-2xl mr-2"></i>
+                        <span class="text-lg">About Me</span>
+                    </div>
+                    <h2 class="text-5xl font-bold text-yellow-400">Adelia Putri</h2>
+                    <p class="mt-4 text-lg">
+                        Setiap harapan pasti ada halangan, dan setiap tujuan pasti ada ujian. Ini tidak mudah, bukan tidak mungkin.
+                    </p>
+
+                    <!-- Social Media -->
+                    <div class="mt-8 flex items-center">
+                        <i class="fab fa-instagram text-2xl mr-2"></i>
+                        <span>@dlptr__</span>
+                    </div>
+                    <div class="mt-2 flex items-center">
+                        <i class="fab fa-spotify text-2xl mr-2"></i>
+                        <span>Fearless (Taylor’s Version)</span>
+                    </div>
+
+                    <!-- Button Play -->
+                    <div class="mt-8">
+                        <button class="bg-green-500 text-white py-2 px-4 rounded-full">PLAY</button>
+                    </div>
+                </div>
+
+                <!-- ========== Gambar Profil ========== -->
+                <div class="md:w-1/2 flex items-center justify-center mt-8 md:mt-0">
+                    <img src="./adelia.jpeg" alt="Profile Picture" class="profile-image"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
