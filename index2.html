@@ -1,3 +1,128 @@
+<!-- Menentukan bahasa dokumen -->
+<html lang="en">
+<head>
+    <!-- Menentukan karakter encoding untuk memastikan teks ditampilkan dengan benar -->
+    <meta charset="utf-8"/>
+    <!-- Mengatur viewport agar tampilan sesuai pada perangkat mobile -->
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <!-- Menentukan judul halaman yang akan ditampilkan di tab browser -->
+    <title>In House Training Coding</title>
+    <!-- Mengimpor Tailwind CSS dari CDN untuk mempermudah styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Mengimpor pustaka Font Awesome untuk menampilkan ikon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <!-- Mengimpor font Roboto dari Google Fonts untuk teks -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <style>
+        /* Mengatur gambar latar belakang halaman */
+        body {
+            background: url('./php2.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Roboto', sans-serif; /* Menggunakan font Roboto */
+        }
+
+        /* Styling untuk kontainer teks berjalan */
+        .marquee-container {
+            width: 100%; /* Mengisi seluruh lebar layar */
+            overflow: hidden; /* Mencegah teks keluar dari area */
+            background-color: #1E40AF; /* Warna latar belakang */
+            color: white; /* Warna teks */
+            padding: 10px 0;
+            position: relative;
+            white-space: nowrap; /* Mencegah teks turun ke baris berikutnya */
+        }
+
+        /* Mengatur konten teks berjalan */
+        .marquee-content {
+            display: flex;
+            gap: 50px; /* Menentukan jarak antar teks */
+            animation: marquee 10s linear infinite; /* Menjalankan animasi */
+        }
+
+        .marquee-content span {
+            font-size: 1.5rem; /* Ukuran teks */
+            font-weight: bold;
+        }
+
+        /* Animasi teks berjalan dari kanan ke kiri */
+        @keyframes marquee {
+            from {
+                transform: translateX(0%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Styling untuk gambar profil */
+        .profile-image {
+            width: 300px;
+            height: 400px;
+            object-fit: cover; /* Menjaga proporsi gambar */
+            border-radius: 8px; /* Membuat sudut gambar melengkung */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+        }
+    </style>
+</head>
+<body>
+    <!-- Menampilkan teks berjalan (Marquee) -->
+    <div class="marquee-container">
+        <div class="marquee-content">
+            <span>In House Training Coding - Minggu, 23 Februari 2025</span>
+            <span>In House Training Coding - Minggu, 23 Februari 2025</span>
+            <span>In House Training Coding - Minggu, 23 Februari 2025</span>
+            <span>In House Training Coding - Minggu, 23 Februari 2025</span>
+        </div>
+    </div>
+
+    <!-- Konten utama -->
+    <div class="flex justify-center items-center h-screen">
+        <div class="bg-blue-800 bg-opacity-75 text-white p-8 rounded-lg relative" style="width: 90%; max-width: 800px;">
+            <div class="relative z-10 flex flex-col md:flex-row">
+                <!-- Bagian kiri berisi informasi pribadi -->
+                <div class="md:w-1/2">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-bars text-2xl mr-2"></i>
+                        <span class="text-lg">about me</span>
+                    </div>
+                    <!-- Menampilkan nama pemilik halaman -->
+                    <h2 class="text-5xl font-bold text-yellow-400">Adelia Putri</h2>
+                    <p class="mt-4 text-lg">Setiap harapan pasti ada halangan, dan setiap tujuan pasti ada ujian. Ini tidak mudah, bukan tidak mungkin.</p>
+                    <!-- Ikon Instagram dan nama pengguna -->
+                    <div class="mt-8 flex items-center">
+                        <i class="fab fa-instagram text-2xl mr-2"></i>
+                        <span>@dlptr__</span>
+                    </div>
+                    <!-- Ikon Spotify dan lagu favorit -->
+                    <div class="mt-2 flex items-center">
+                        <i class="fab fa-spotify text-2xl mr-2"></i>
+                        <span>Fearless (Taylor’s Version)</span>
+                    </div>
+                    <!-- Tombol untuk memutar lagu -->
+                    <div class="mt-8">
+                        <button class="bg-green-500 text-white py-2 px-4 rounded-full">PLY<A/button>
+                    </div>
+                </div>
+                <!-- Bagian kanan berisi gambar profil -->
+                <div class="md:w-1/2 flex items-center justify-center mt-8 md:mt-0">
+                    <img src="./adelia.jpeg" alt="Profile Picture" class="profile-image"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -117,3 +242,4 @@
 
 </body>
 </html>
+
